@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Sarala', sans-serif;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(68.15deg,hsl(0, 0%, 98%) 16.62%, hsl(15, 2%, 33%)) 85.61%;
+    background-image: url(./fundo.jpeg);
+    width:100%;
+    font-family: 'Sarala', sans-serif;
+    color: aliceblue;
+}
+
+
+header {
+    width:100%;
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    padding: 0.8rem 0.8rem 0.8rem 0;
+    transition: 0.6s;
+    }
+
+header nav{
+    display: flex;
+    width:100%;
+    max-width: 1200px;
+    justify-content: flex-end;
+    gap: 24px;
+}    
+
+header nav a {
+    color: var(--textColor);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-principal {
+    color: var(--titlemain);
+    margin: auto;
+    width: max-content;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2.3rem;
+    font-family: 'Sarala', sans-serif;
+}
+
+.titulo-principal::after{
+    width: 65%;
+    height: 5px;
+    display: block;
+    bottom: 0;
+    margin: -4px auto;
+    z-index: -1;
+    left: 0;
+    right: 0;
+}
+
+.container-portfolio,
+.container-contato {
+    margin-top: 3.5rem;
+    max-width: 1200px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 24px;
+    padding-top: 150px;
+}
+
+.container-home {
+    display: flex;
+    flex-direction: column;
+    height: 99vh;
+    width: 100%;
+    background: var(--home-bacground);
+    font-size: 38px;
+    }
+
+.container-home #top {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-home #botton {
+    align-self: center;
+    animation: blink 1s ease-in-out alternate infinite;
+}
+
+.container-home #botton img {
+    width: 30px;
+}
+
+#home-rigth-side p,
+h1 {
+    line-height: 100%;
+}
+
+#home-rigth-side h1 {
+    font-size: 4.5rem;
+}
+
+#home-rigth-side h1:after {
+    content: "|";
+    margin-top: -7.5px;
+    animation: blink_text_main 0.8s infinite;
+}
+
+#home-right-side p {
+    opacity: 0.95;
+    font-size: 1.8rem;
+  }
+
+  #home-right-side p:last-of-type {
+    opacity: 0.8;
+    text-indent: 0.5rem;
+  }
+
+  #home-left-side #download-btn {
+    border: 2px solid rgba(24, 22, 22, 0.884);
+    color: var(--textColor);
+    padding: 0.7rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    transition: 0.6s;
+  }
+
+  #home-left-side #download-btn:hover {
+    color: rgb(255, 255, 255);
+    border: 2px solid #cbdcdf67;
+    background-color: #dbe5e767;
+  }
+
+ .container-habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    padding-top: 70px;
+    margin-bottom: 70px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 20px;
+    gap: 24px    
+ }
+
+
+.primeira{
+    gap: 30px;
+    background-color: #C4C4C4;
+    padding: 12px;
+    border-radius: 10px;
+
+} 
+
+
+.segunda {
+    margin: 30px;    
+    gap: 30px;
+    background-color: #C4C4C4;
+    padding: 8px;
+    border-radius: 10px;   
+       
+}
+.terceira, .quarta, .quinta {
+    margin: 30px; 
+    gap: 30px;
+    background-color: #C4C4C4;
+    padding: 12px;
+    border-radius: 10px;       
+}
+
+
+.pro {
+    
+    height: 210px;
+    width: 310px;
+    border-radius:20px;
+    display: flex;
+    margin-top: 10px;    
+    padding-top: 70px;
+    cursor: pointer;     
+  }
+  
+  .pro div p {
+    font-family: 'Sarala', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
+  }  
+  
+  .pro div {
+    background-color: #1d1818;
+    width: 1000px;
+    text-align: center;
+    padding: 2% 0;   
+  }
+  
+  .escondido {
+    opacity: 0;
+    display: none;
+    transition: 1000ms;
+  }
+  .projetos-itens {
+    display: flex;    
+    gap: 100px;
+    width: 100%;    
+    justify-content: center;
+  }
+  
+  @media (max-width:1200px) {
+  .projetos{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+  }
+  }
+  #projetos {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .projetos-itens {
+      flex-direction: row;
+      
+  }
+  
+  
+  @media (max-width:950px) {
+    .pro {
+        max-width: 300px;
+    }
+    }
+
+ .container-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Sarala', sans-serif;
+    font-size: 20px;
+    padding-top: 590px;
+    text-align: center;
+        
+ } 
+ .title-main {
+    color: var(--titlemain);
+    margin: auto;
+    width: max-content;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 2.2rem;
+    font-family: 'Sarala', sans-serif;  
+     
+     }
