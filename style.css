@@ -160,7 +160,6 @@ h1 {
     background-color: #C4C4C4;
     padding: 12px;
     border-radius: 10px;
-
 } 
 
 
@@ -205,11 +204,19 @@ h1 {
       }
   }
 
+  @media (max-width: 768px) {
+    /* Estilos para telas menores */
+    .projetos-itens {
+        display: flex;
+        flex-direction: column; 
+    }
+  }
+
+
  @media  (max-width:480px) {
     .projetos-itens {        
         display: flex;
-        flex-direction: column;
-          
+        flex-direction: column;     
       }
     }    
 
@@ -220,8 +227,7 @@ h1 {
     font-family:'Sarala', sans-serif;
     font-size: 20px;
     padding-top: 600px;
-    text-align: center;
-        
+    text-align: center;       
  } 
  .title-main {
     color: var(--titlemain);
@@ -231,5 +237,4 @@ h1 {
     font-weight: bold;
     font-size: 2.2rem;
     font-family: 'Sarala', sans-serif;  
-     
-     }
+}
